@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css?family=Cantarell:700|Source+Code+Pro");
+#mainNav {
+  position: fixed;
+  z-index: 1200;
+  opacity: 1;
+  transition: 0.5s;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  font-family: "Cantarell", "Helvetica Neue", Arial, sans-serif;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+#mainNav .navbar-brand {
+  font-weight: 700;
+  color: #000;
+  font-family: "Cantarell", "Helvetica Neue", Arial, sans-serif;
+}
+#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: #ff5946;
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #212529;
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+  color: #ff5947;
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
+  color: #ff5947 !important;
+  background-color: transparent;
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
+  background-color: transparent;
+}
+
+.brand_name {
+  font-size: 0.8em !important;
+  line-height: 1em !important;
+  width: 30%;
+  color: #fff;
+  z-index: 2500;
+}
+
+.text-primary {
+  color: #ff5947 !important;
+}
+
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 300px;
+  font-family: "Cantarell", "Helvetica Neue", Arial, sans-serif;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+}
+
+.btn-primary {
+  background-color: #ff5947;
+  border-color: #ff5947;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  color: #fff;
+  background-color: #ff422e !important;
+}
+.btn-primary:active, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.7em;
+}
+
+h1, h2, h3 {
+  margin: 1.5rem 0 1.3rem 0;
+}
+
+h4, h5, h6 {
+  margin: 1.1rem 0 1rem 0;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 2em;
+  margin-top: 1.5em;
+}
+
+.portfolio-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+}
+.portfolio-box .portfolio-box-caption {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(255, 89, 71, 0.9);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  padding: 0 15px;
+  font-family: "Cantarell", "Helvetica Neue", Arial, sans-serif;
+}
+.portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+.portfolio-box:focus {
+  outline: none;
+}
+@media (min-width: 768px) {
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    font-size: 16px;
+  }
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 22px;
+  }
+}
+
+.frame {
+  border: 1px solid #ff5947;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+}
+.frame img {
+  width: 85%;
+  border: 1px solid #ff5947;
+  vertical-align: middle;
+  margin-top: 7.5%;
+  margin-bottom: 7.5%;
+}
+
+.project-category {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.project-name {
+  font-size: 18px;
+}
+
+.project-step_name {
+  font-size: 24px;
+  font-family: "Cantarell", "Helvetica Neue", Arial, sans-serif;
+}
+
+.project-step_desc {
+  font-size: 14px;
+}
+
+.step-num {
+  font-size: 95px;
+  font-family: "Cantarell", "Helvetica Neue", Arial, sans-serif;
+  position: relative;
+  top: -30px;
+  font-weight: bold;
+}
+
+html, body {
+  background-color: #ffe6be;
+  height: 100% !important;
+  width: 100%;
+}
+
+body {
+  font-family: "Source Code Pro", monospace;
+}
+
+img {
+  width: 100%;
+}
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.text-masthead {
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 700 !important;
+}
+
+a {
+  color: #ff5947;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+a:hover {
+  color: #ff5946;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cantarell", "Helvetica Neue", Arial, sans-serif;
+}
+
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #ff5947;
+}
+
+hr.light {
+  border-color: #fff;
+}
+
+.bg-primary {
+  background-color: #ff5947 !important;
+}
+
+.bg-dark {
+  background-color: #212529 !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+.bg-sup-1 {
+  background-color: #131849 !important;
+}
+
+.bg-sup-2 {
+  background-color: #c3e9b9 !important;
+}
+
+.bg-sup-3 {
+  background-color: #ffe6be !important;
+}
+
+.bg-sup-4 {
+  background-color: #7cc7ff !important;
+}
+
+section {
+  padding: 1rem 0;
+}
+
+.section-heading {
+  margin-top: 0;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #212529;
+  text-shadow: none;
+}
+
+::selection {
+  color: #fff;
+  background: #212529;
+  text-shadow: none;
+}
+
+img::selection {
+  color: #fff;
+  background: transparent;
+}
+
+img::-moz-selection {
+  color: #fff;
+  background: transparent;
+}
+
+/*# sourceMappingURL=index.css.map */

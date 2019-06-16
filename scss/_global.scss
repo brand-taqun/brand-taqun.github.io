@@ -1,0 +1,118 @@
+// Global styling for this template
+html, body {
+  background-color: $brand-02;
+  height: 100% !important;
+  width: 100%;}
+
+body {
+  @include serif-font;
+}
+
+img {
+  width: 100%;
+}
+
+
+// text
+
+.text-faded {
+  color: fade-out($white, .3);
+}
+
+.text-masthead{
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+a {
+  color: $brand-01;
+  @include transition-all;
+  &:hover {
+    color: darken($brand-01, .1);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include sans-serif-font;
+}
+
+// divider
+
+
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: $brand-01;
+}
+
+hr.light {
+  border-color: $white;
+}
+
+
+
+// background
+
+.bg-primary {
+  background-color: $brand-01 !important;
+}
+
+.bg-dark {
+  background-color: $gray-900!important;
+}
+
+.bg-white {
+  background-color: $white !important;
+}
+
+.bg-sup-1 {
+  background-color: $support-01 !important;
+}
+.bg-sup-2 {
+  background-color: $support-02 !important;
+}
+.bg-sup-3 {
+  background-color: $support-03 !important;
+}
+.bg-sup-4 {
+  background-color: $support-04 !important;
+}
+
+
+//
+
+section {
+  padding: 1rem 0;
+}
+
+.section-heading {
+  margin-top: 0;
+}
+
+::-moz-selection {
+  color: $white;
+  background: $gray-900;
+  text-shadow: none;
+}
+
+::selection {
+  color: $white;
+  background: $gray-900;
+  text-shadow: none;
+}
+
+img::selection {
+  color: $white;
+  background: transparent;
+}
+
+img::-moz-selection {
+  color: $white;
+  background: transparent;
+}
+

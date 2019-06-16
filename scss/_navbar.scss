@@ -1,0 +1,49 @@
+// Styling for the navbar
+#mainNav {
+  position: fixed;
+  z-index: 1200;
+  opacity: 1;
+  transition: 0.5s;
+  overflow: scroll;
+  -ms-overflow-style: none;  // IE 10+
+  overflow: -moz-scrollbars-none;  // Firefox
+  @include sans-serif-font;
+  @include transition-all;
+  .navbar-brand {
+    font-weight: 700;
+    color: $black;
+    @include sans-serif-font;
+    &:focus,
+    &:hover {
+      color: darken($brand-01, .1);
+    }
+  }
+  .navbar-nav {
+    > li.nav-item {
+      > a.nav-link,
+      > a.nav-link:focus {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $gray-900;
+        &:hover {
+          color: $brand-01;
+        }
+        &.active {
+          color: $brand-01 !important;
+          background-color: transparent;
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+} 
+
+.brand_name{
+  font-size: 0.8em !important;
+  line-height: 1em !important;
+  width: 30%;
+  color: $white;
+  z-index: 2500;
+}
