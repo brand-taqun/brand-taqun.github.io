@@ -4,10 +4,6 @@
 }
 
 .btn {
-  font-weight: 700;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 300px;
   @include sans-serif-font;
 }
 
@@ -15,7 +11,7 @@
   padding: 1rem 2rem;
 }
 
-.btn-primary {
+.btn-primary, .btn-outline-primary{
   background-color: $brand-01;
   border-color: $brand-01;
   &:hover,
@@ -54,4 +50,9 @@ p{
   font-size: 1.1em;
   line-height: 2em;
   margin-top: 1.5em;
+}
+
+.card-text{
+  line-height: 1.45em;
+  font-size:0.95em;
 }
