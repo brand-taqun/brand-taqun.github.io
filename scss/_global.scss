@@ -24,6 +24,10 @@ img {
   font-weight: 700 !important;
 }
 
+.text-primary{
+  color: $brand-01;
+}
+
 a {
   color: $brand-01;
   @include transition-all;

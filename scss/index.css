@@ -103,6 +103,10 @@ p {
   font-size: 0.95em;
 }
 
+.border-top, .border-bottom {
+  border-color: #ff5947 !important;
+}
+
 .portfolio-box {
   position: relative;
   display: block;
@@ -211,6 +215,10 @@ img {
 .text-masthead {
   font-family: "Raleway", sans-serif !important;
   font-weight: 700 !important;
+}
+
+.text-primary {
+  color: #ff5947;
 }
 
 a {
