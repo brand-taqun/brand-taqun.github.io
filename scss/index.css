@@ -4,7 +4,7 @@
   z-index: 1200;
   opacity: 1;
   transition: 0.5s;
-  overflow: scroll;
+  overflow: hidden;
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
   font-family: "Cantarell", "Helvetica Neue", Arial, sans-serif;
